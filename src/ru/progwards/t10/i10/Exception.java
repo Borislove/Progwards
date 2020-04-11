@@ -1,4 +1,4 @@
-package ru.progwards.t10.t10_1.i10;
+package ru.progwards.t10.i10;
 
 /*Напишите функцию, со спецификацией public Integer sqr(Integer n)
  которая вычисляет квадрат переданного числа
