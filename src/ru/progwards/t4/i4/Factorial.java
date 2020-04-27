@@ -34,6 +34,10 @@ public class Factorial {
         return result;
     }
 
+    static long factorial3 (long num) {
+        return (num == 0) ? 1 : num * factorial (num - 1);
+    }
+
     public static void main(String[] args) {
 
         //factorial(5); //120
