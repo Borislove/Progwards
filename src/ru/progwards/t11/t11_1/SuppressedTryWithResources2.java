@@ -1,7 +1,5 @@
 package ru.progwards.t11.t11_1;
 
-import java.io.IOException;
-
 //Подавленные исключения от разных объектов
 public class SuppressedTryWithResources2 {
     public static void doAlwaysExceptions() throws Exception {

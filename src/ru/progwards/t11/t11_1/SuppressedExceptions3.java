@@ -1,7 +1,5 @@
 package ru.progwards.t11.t11_1;
 
-import java.io.IOException;
-
 //Сохраненине подавленных исключений
 public class SuppressedExceptions3 {
 
