@@ -1,9 +1,9 @@
 package ru.progwards.t11.t11_4;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.util.Scanner;
 
 public class RAFWithCities extends RandomAccessFile {
 
@@ -56,7 +56,7 @@ public class RAFWithCities extends RandomAccessFile {
 
         while (start != end) {
             //ищем середину и движемся к началу строки
-            long current = startStringPosition(end + start) / 2;
+            long current = startStringPosition((end + start) / 2);   //  <------------!!!! скобочки наше всё!!!!  (end + start) / 2
             seek(current);
             String currentLine = readLine();
             if (currentLine == null)
@@ -91,19 +91,33 @@ public class RAFWithCities extends RandomAccessFile {
 
     //точка входа в программу
     public static void main(String[] args) {
-        try (RAFWithCities rafcities = new RAFWithCities("e:/academy/misk/cities.csv")) {
-            /*if (rafcities.findCity("Апатиты")) System.out.println(rafcities.cityGeoLocation);
-            if (rafcities.findCity("ТомсК")) System.out.println(rafcities.cityGeoLocation);
-            if (rafcities.findCity("ЯСНЫЙ")) System.out.println(rafcities.cityGeoLocation);
-            if (rafcities.findCity("Владивосток")) System.out.println(rafcities.cityGeoLocation);
-            if (rafcities.findCity("Яхрома")) System.out.println(rafcities.cityGeoLocation);*/
+        try (RAFWithCities rafCities = new RAFWithCities("e:/academy/misk/citiesfull.csv")) {   //txt - тоже
+          /*  if (rafCities.findCity("Апатиты")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("ТомсК")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("ЯСНЫЙ")) System.out.println(rafCities.cityGeoLocation);           //не найден
+            if (rafCities.findCity("Владивосток")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("Яхрома")) System.out.println(rafCities.cityGeoLocation);
 
-            if (rafcities.findCity("Москва")) System.out.println(rafcities.cityGeoLocation);
-            if (rafcities.findCity("Абакан")) System.out.println(rafcities.cityGeoLocation);
-            if (rafcities.findCity("Артём")) System.out.println(rafcities.cityGeoLocation);
-            if (rafcities.findCity("Азов")) System.out.println(rafcities.cityGeoLocation);
+            if (rafCities.findCity("Москва")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("Абакан")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("Артём")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("Азов")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("Комсомольск-на-Амуре")) System.out.println(rafCities.cityGeoLocation);
+            if (rafCities.findCity("Пенза")) System.out.println(rafCities.cityGeoLocation);*/
 
+            if (rafCities.findCity("Санкт-Петербург")) System.out.println(rafCities.cityGeoLocation);
 
+            if (rafCities.findCity("ЯСНЫЙ")) {
+                System.out.println(rafCities.cityGeoLocation);
+            } else {
+                System.out.println("Город не найден");
+            }
+
+            //ввод с клавиатуры город
+            Scanner scanner = new Scanner(System.in);
+            if (rafCities.findCity(scanner.nextLine())) System.out.println(rafCities.cityGeoLocation);
+            else
+                System.out.println("Город не найден");
 
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
@@ -112,24 +126,3 @@ public class RAFWithCities extends RandomAccessFile {
         }
     }
 }
-
-
-/*Москва,	55.75, 37.62
-Абакан,	53.72, 91.43
-Адлер,	43.43, 39.92
-Азов,	47.11, 39.42
-Александров,	56.4, 38.71
-Алексин,	54.51, 37.07
-Альметьевск,	54.9, 52.32
-Анадырь,	64.73, 177.51
-Анапа,	44.89, 37.32
-Ангарск,	52.54, 103.89
-Анжеро-Судженск,	56.08, 86.03
-Апатиты,	67.56, 33.4
-Арзамас,	55.39, 43.84
-Армавир,	44.99, 41.12
-Арсеньев,	44.15, 133.28
-Артём,	43.36, 132.19
-Архангельск,	64.54, 40.54
-
-*/
