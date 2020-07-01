@@ -9,7 +9,7 @@ import java.util.Arrays;
 Например,
 invertWords("Буря мглою небо кроет") должен вернуть
 "кроет.небо.мглою.Буря"*/
-public class Test {
+public class   Test {
 
 
     public String invertWords(String sentence) {
