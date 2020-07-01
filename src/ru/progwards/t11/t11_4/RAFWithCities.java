@@ -91,7 +91,10 @@ public class RAFWithCities extends RandomAccessFile {
 
     //точка входа в программу
     public static void main(String[] args) {
-        try (RAFWithCities rafCities = new RAFWithCities("e:/academy/misk/citiesfull.csv")) {   //txt - тоже
+        //try (RAFWithCities rafCities = new RAFWithCities("e:/academy/misk/citiesfull.csv")) {   //txt - тоже
+
+        try (RAFWithCities rafCities = new RAFWithCities("src/ru/progwards/t11/t11_4/citiesfull.csv")) {   //txt - тоже
+
           /*  if (rafCities.findCity("Апатиты")) System.out.println(rafCities.cityGeoLocation);
             if (rafCities.findCity("ТомсК")) System.out.println(rafCities.cityGeoLocation);
             if (rafCities.findCity("ЯСНЫЙ")) System.out.println(rafCities.cityGeoLocation);           //не найден
