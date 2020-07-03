@@ -11,7 +11,6 @@ invertWords("Буря мглою небо кроет") должен вернут
 "кроет.небо.мглою.Буря"*/
 public class   Test {
 
-
     public String invertWords(String sentence) {
 
         String[] str = sentence.split(" ");   //запихнул в массив
@@ -38,6 +37,11 @@ public class   Test {
 
 
     public static void main(String[] args) {
+
+
+         String str = "Буря мглою небо кроет";
+        System.out.println(str.length());
+
         Test test = new Test();
         // test.invertWords("Буря мглою небо кроет");
         System.out.println(test.invertWords("Буря мглою небо кроет"));
