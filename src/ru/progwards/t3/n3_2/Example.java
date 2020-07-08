@@ -5,9 +5,7 @@ public class Example {
 
     //Создание объекта через конструктор
     // Integer int1 = new Integer(5); //нежелательно /deprecated
-
     public static void main(String[] args) {
-
 
         Integer int1 = 5;
         System.out.println(int1);

@@ -30,5 +30,6 @@ public class Task {
     float fl = 1.22278f;
     double pi = 3.1415926535;
     double koe = 1.5 * 10e6;
-    String message = "Запись фильма " + "\"Матрица\"" + " находится в файле C:\\video\\matrix.avi";
+    //String message = "Запись фильма " + "\"Матрица\"" + " находится в файле C:\\video\\matrix.avi";
+    String message = "Запись фильма \"Матрица\" находится в файле C:\\video\\matrix.avi";  //System.out.println("prog\"lang.su --> \\\" - двойная кавычка");
 }

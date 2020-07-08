@@ -11,5 +11,7 @@ public class Task_04 {
     public static void main(String[] args) {
         System.out.print("289468" + " + 56624" + " + 88464 = ");
         System.out.println(289468 + 56624 + 88464);
+
+        System.out.print("289468 + 56624 + 88464 = " +(289468 + 56624 + 88464));  //ну не читается ведь...
     }
 }

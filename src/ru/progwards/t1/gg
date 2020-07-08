@@ -1,0 +1,36 @@
+public class CalcAndText {
+
+static         int a = 12;
+ static        int b = 34;
+   static      int c = 48;
+
+    public static void func() {
+
+        for (int i = 1; i < 3; i++) {
+            switch (i) {
+                case 1:
+                    a = 33;
+                    b = 44;
+                    c = 55;
+                    String str = a + " + " + b + " + " + c + " = ";
+                    System.out.println(str + (a + b + c));
+                    break;
+
+                case 2:
+                    a = 98;
+                    b = 99;
+                    c = 97;
+                    String str2 = a + " + " + b + " + " + c + " = ";
+                    System.out.println(str2 + (a + b + c));
+                    //System.out.println(str + (a + b + c));
+                    break;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        func();
+    }
+}
+
+

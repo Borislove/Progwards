@@ -8,8 +8,12 @@ package ru.progwards.t1;
 
 public class Task_03 {
     public static void main(String[] args) {
-        System.out.print("Java это ");
+
+      /*  System.out.print("Java это ");
         System.out.print("строго типизированный объектно-ориентированный");
         System.out.print(" язык программирования");
+*/
+
+        System.out.println("Java это" + "\n" + "строго типизированный объектно-ориентированный" + "\n" + "язык программирования");  //с новой строки
     }
 }
