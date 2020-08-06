@@ -35,8 +35,8 @@ public class Rectangle {
     private double b;
 
     public Rectangle(double a, double b) {
-this.a = a;
-this.b = b;
+        this.a = a;
+        this.b = b;
 
     }
 
@@ -252,8 +252,8 @@ this.b = b;
         System.out.println(abc);
         System.out.println(abcd);
         */
-    //    this.a = a;
-     //   this.b = b;
+        //    this.a = a;
+        //   this.b = b;
 
         //  new Rectangle(a,b).compareTo(new Rectangle(a,b));
       /* if(new Rectangle(a,b).compareTo(new Rectangle(a,b)) == 0) {
@@ -315,6 +315,7 @@ class Main {
 
 
     }
+
 }
 
 

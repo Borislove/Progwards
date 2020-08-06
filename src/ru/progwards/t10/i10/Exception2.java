@@ -10,7 +10,7 @@ public class Exception2 {
     public static String test(String filename) throws IOException {
 
         if (filename == null)
-            throw new IOException();
+            throw new IOException("File not found");
 
         return "File processing";
     }

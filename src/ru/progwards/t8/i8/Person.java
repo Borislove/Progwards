@@ -11,21 +11,25 @@ package ru.progwards.t8.i8;
 
 public class Person {
 
-
-    class Child1 {
+    static class Child1 { //вложенный
 
         public String hello() {
-            getClass();
+            //getClass();
             return "привет";
         }
     }
 
-    static class Child2 {
-
+    class Child2 {  //внутренний
         public String hello() {
-            getClass();
+            //getClass();
             return "servus";
         }
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(new Person().new Child2().hello());
+        System.out.println(new Person.Child1().hello());
     }
 }
 

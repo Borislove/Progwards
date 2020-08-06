@@ -1,4 +1,18 @@
 package ru.progwards.t4.i4;
+/*Создайте метод, возвращающий значение enum Grade по числовой оценке.
+Сигнатура метода static Grade intToGrade(int grade)
+
+Соответствие оценок
+
+1 - VERYBAD
+2 - BAD
+3 - SATISFACTORILY
+4 - GOOD
+5 - EXCELLENT
+все остальное NOTDEFINED
+
+Например, intToGrade(4) должно вернуть GOOD*/
+
 
 //что то пошло не так...
 enum Kinds1 {   //виды оценок
@@ -30,7 +44,7 @@ public class OcenkaTest1 {
             break;
         }
 
-        for (; grade <= 20; ) {
+        for (; grade <= 20 && grade > 1; ) {
             System.out.println(Kinds1.VERYBAD);
             break;
         }

@@ -16,7 +16,15 @@ import java.io.IOException;
 
 public class Test {
 
-    public void doSomething(int n) {
+    public void doSomething(int n) throws IOException {
+
+        try {
+            doSomething(n);
+        } catch (IOException e) {
+            e.getMessage();
+        } finally {
+            System.out.println("finally executed");
+        }
     }
 
     public void test(int n) throws IOException {
@@ -24,7 +32,7 @@ public class Test {
             doSomething(n);
         } catch (Throwable e) {
             System.out.println(e.getMessage());
-            throw new IOException(e);
+            throw new IOException(e);   //3) Пробросите исключение дальше
 
         } finally {
             System.out.println("finally executed");

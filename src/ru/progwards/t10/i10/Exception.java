@@ -10,12 +10,10 @@ public class Exception extends Throwable {
         try {
             return n * n;
         } catch (
-                ArithmeticException e) {
+                ArithmeticException | NullPointerException e) {
             return -1;
-        } catch (NullPointerException e) {
-            return -1;
-        } catch (java.lang.Exception e) {
-            return 0;
+        /*} catch (java.lang.Exception e) {
+            return 0;*/
         }
     }
 }

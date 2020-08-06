@@ -8,11 +8,11 @@ public class Factorial {
     //--------------------option 1------------------
     static long factorial(long n) {
         if (n == 0)
-            return 0;
+            return 1;
         if (n > 1) {
             n = n * factorial(--n);
         }
-        System.out.println(n);
+        //System.out.println(n);
         return n;
     }
 
@@ -34,8 +34,8 @@ public class Factorial {
         return result;
     }
 
-    static long factorial3 (long num) {
-        return (num == 0) ? 1 : num * factorial (num - 1);
+    static long factorial3(long num) {
+        return (num == 0) ? 1 : num * factorial(num - 1);
     }
 
     public static void main(String[] args) {
@@ -45,7 +45,11 @@ public class Factorial {
         //System.out.println(factorial(n));
         // factorial(7);
         //  System.out.println(factorial(10));
-        System.out.println(factorial2(6));
+        //  System.out.println(factorial2(6));
+
+        System.out.println(factorial3(5));
+
+        System.out.println(factorial(0));
     }
 }
 

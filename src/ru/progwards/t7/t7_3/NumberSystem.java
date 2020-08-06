@@ -53,7 +53,7 @@ public class NumberSystem {
     }
 
     public static void main(String[] args) {
-        int value = 3;
+        int value = 7;
         System.out.println("Десятичная система: " + value);
         System.out.println("Двоичная система: " + NumberSystem.show(value, 2));
         System.out.println("Шестнадцатиричная система: " + NumberSystem.show(value, 16));

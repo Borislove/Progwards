@@ -27,7 +27,7 @@ public class Ocenka {
             System.out.println("не оценено");
         }
 
-        if (grade >= 1 & grade <= 20) {
+        if (grade >= 1 && grade <= 20) {
             //System.out.println(grade + " очень плохо");
             System.out.println("очень плохо");
         }
@@ -60,6 +60,7 @@ public class Ocenka {
 
 
     public static void main(String[] args) {
+        textGrade(19);
         textGrade(82);
         textGrade(900);
         //textGrade(45);

@@ -8,7 +8,8 @@ package ru.progwards.t3.i3;
 public class Fractional {
 
     static double fractional(double num) {
-        return num - (int) num % (100);
+        //return num - (int) num % (100);
+        return num%1;
     }
 
     public static void main(String[] args) {

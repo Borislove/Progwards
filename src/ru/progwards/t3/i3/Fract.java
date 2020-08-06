@@ -3,10 +3,12 @@ package ru.progwards.t3.i3;
 public class Fract {
     static double fractional(double num) {
 
-        int value = (int)num;
+       /* int value = (int)num;
         Double d1 = num - value ;
         System.out.println(d1);
-        return 0; //
+        return 0; //*/
+        System.out.println(num%1);
+       return num%1;
     }
 
 
