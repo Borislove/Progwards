@@ -6,7 +6,7 @@ import java.util.Set;
 //Реализуйте метод,с сигнатурой public Set<Integer> a2set(int[] a),
 // который преобразует массив в множество
 public class Example {
-    //убрать повторы
+
     public static Set<Integer> a2set(int[] a) {
 
         Set<Integer> integerSet = new HashSet<>();
