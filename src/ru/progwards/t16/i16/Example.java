@@ -1,4 +1,4 @@
-package ru.progwards.t16.t16_1.i16;
+package ru.progwards.t16.i16;
 
 
 import java.util.Calendar;
