@@ -122,7 +122,8 @@ a * b = ?
         addition(528, 387);
         multiplication(124, 87);
         multiplication(1528, 3);
-        // calculation();
+      calculation();
+        addition(1,1);
     }
 }
 
