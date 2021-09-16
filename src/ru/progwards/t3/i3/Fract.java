@@ -16,6 +16,13 @@ public class Fract {
 
         fractional(98.45);
         fractional (1.53);
+
+        fractional(10102.2456);
+
+        System.out.println(5%8);
+
+        double x = 5 / 2;
+        System.out.println(x);
     }
 }
 

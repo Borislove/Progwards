@@ -94,6 +94,7 @@ public class CalcAndText {
 /*12 + 34 + 48 = <результат вычислений>
 33 + 44 + 55 = <результат вычислений>
 98 + 99 + 97 = <результат вычислений>*/
+/*
 
 // TODO: 06.07.2020 что то не так... 
 public class CalcAndText {
@@ -103,9 +104,11 @@ public class CalcAndText {
     static int[] stackTwoNumbers = {33, 44, 55};
     static int[] stackTreeNumbers = {98, 99, 97};
 
+*/
 /*    static int a = stackOneNumbers[0];
     static int b = stackOneNumbers[1];
-    static int c = stackOneNumbers[2];*/
+    static int c = stackOneNumbers[2];*//*
+
 
     public static int getA() {
         return a;
@@ -159,9 +162,20 @@ public class CalcAndText {
 
     public static void main(String[] args) {
 
+*/
 /*        System.out.println(numbers(12, 34, 48));
         System.out.println(numbers(33, 44, 55));
-        System.out.println(numbers(98, 99, 97));*/
+        System.out.println(numbers(98, 99, 97));*//*
+
         str();
+    }
+}*/
+
+
+public class CalcAndText {
+    public static void main(String[] args) {
+        System.out.println("12 + 34 + 48 = "+(12 + 34 + 48));
+        System.out.println("33 + 44 + 55 = "+(33 + 44 + 55));
+        System.out.println("98 + 99 + 97 = "+(98 + 99 + 97));
     }
 }

@@ -1,5 +1,7 @@
 package ru.progwards.t1;
 
+// TODO: 04.08.2021  Сумма от 0 до 9 = 45
+
 /*Создайте класс с именем Calc в котором разместите функцию main,
  которая выводит информацию на консоль, используя сложение чисел, результат следующих вычислений:
 
@@ -16,7 +18,7 @@ package ru.progwards.t1;
         }
     }*/
 
-public class Calc {
+/*public class Calc {
 
     public static void main(String[] args) {
 
@@ -29,5 +31,22 @@ public class Calc {
         System.out.println(125 + 397 + 942);
         System.out.println(396 + 397 + 398 + 399);
     }
-}
+}*/
 
+
+public class Calc {
+
+    private static int sum(int a, int b) {
+        int value = 0;
+        for (; b >= a; b--) {
+            value += b;
+        }
+        return value;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sum(0, 9));
+        System.out.println(125 + 397 + 942);
+        System.out.println(396 + 397 + 398 + 399);
+    }
+}

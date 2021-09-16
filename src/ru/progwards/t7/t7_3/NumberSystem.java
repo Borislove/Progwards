@@ -21,6 +21,7 @@ public class NumberSystem {
         }
         */
         //---------------------------------------
+        // замена на switch (скорость)
         switch (val) {
             case 10:
                 return "A";

@@ -12,6 +12,11 @@ public class LogicalOperationOrder1 {
 
         boolean result1 = a++ == b & ++c == --d;
 
+        //////////////////////////////////
+        /*System.out.println(a++ == b); //true
+        System.out.println(++c == --d); //false*/
+        //////////////////////////////////
+
         System.out.println("result1 = " + result1);
         System.out.println("a = " + a);
         System.out.println("b = " + b);

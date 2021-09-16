@@ -59,6 +59,10 @@ public class Gluing {
         return Integer.parseInt(s);
     }
 
+    public static int addAsStrings6(int n1, int n2) {
+        return Integer.parseInt(n1 + "" + n2);
+    }
+
     public static void main(String[] args) {
         addAsStrings(2, 3);
         System.out.println(addAsStrings(2, 3));
@@ -66,7 +70,9 @@ public class Gluing {
         System.out.println(addAsStrings2(4, 4));
         System.out.println(addAsStrings4(99, 100));
 
-        System.out.println(addAsStrings2(2,3));
+        System.out.println(addAsStrings2(2, 3));
+
+        System.out.println(addAsStrings6(5, 5));
     }
 }
 

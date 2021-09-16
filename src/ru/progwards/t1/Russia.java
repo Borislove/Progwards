@@ -7,6 +7,7 @@ package ru.progwards.t1;
 //ВВП (ППС) России 28797$ на душу населения
 //ВВП (номинал) России 11289$ на душу населения
 
+/*
 public class Russia {
     public static void main(String[] args) {
         System.out.println("Площадь России " + 17125191 + " квадратных километров");
@@ -15,5 +16,31 @@ public class Russia {
         System.out.println("ВВП (номинал) России " + 11289 + "$" + " на душу населения");
     }
 }
+*/
 
 
+/*
+public class Russia{
+
+    public static void main(String[] args){
+
+        String str = "Площадь России 17125191 квадратных километров\n" +
+                "Население России 146780720 человек\n" +
+                "ВВП (ППС) России 28797$ на душу населения\n"+
+                "ВВП (номинал) России 11289$ на душу населения";
+        System.out.println(str);
+    }
+}
+*/
+
+public class Russia{
+
+    public static void main(String[] args){
+
+        String str = "Площадь России 17125191 квадратных километров" + "\n"+
+                "Население России 146780720 человек"+ "\n"+
+                "ВВП (ППС) России 28797$ на душу населения"+ "\n"+
+                "ВВП (номинал) России 11289$ на душу населения";
+        System.out.println(str);
+    }
+}
