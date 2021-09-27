@@ -12,7 +12,8 @@ public class Person { //Passed all tests!
 
     private String name;
     private int age;
-    private String country;  //с пустым не работает
+    //private String country = "RU"; //с пустым не работает
+    private String country; // TODO: 27.09.2021 вызвать конструктор по умолчанию в конструктор с параметрами
 
     public Person(String name, int age) {
         this();
