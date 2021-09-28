@@ -9,8 +9,6 @@ public class Car_1 {
     final String model;
     final int maxSpeed;
     /////////////////////////
-
-
     int speed; // добавим текущую скорость
 
     //конструктор
@@ -23,9 +21,7 @@ public class Car_1 {
 
     public static void main(String[] args) {
 
-
         Car_1 car_1 = new Car_1("Ford", "Focus", 10);
-
     }
 }
 

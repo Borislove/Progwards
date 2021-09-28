@@ -41,7 +41,6 @@ class UseCar_6 {
 
         System.out.println("Быстрейшая машина " + fastestCar.brand);
         ///////////////////////////////////////////////////////////////////////////
-
         LocalTime lc2 = LocalTime.now();
 
         Duration duration = Duration.between(lc1,lc2);

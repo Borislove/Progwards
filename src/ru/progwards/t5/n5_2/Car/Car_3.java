@@ -34,7 +34,6 @@ public class Car_3 {
 
         System.out.println(jaguar.info());
         System.out.println(ford.info());
-
     }
 }
 
