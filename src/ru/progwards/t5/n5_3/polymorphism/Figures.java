@@ -1,6 +1,8 @@
-package ru.progwards.t5.n5_3.Inheritance;
+package ru.progwards.t5.n5_3.polymorphism;
 
 public class Figures {
+
+    // TODO: 29.09.2021 Передаем другие типы (прародитель фигура)
     public static void printInfo(Figure figure) {
         System.out.println(figure);
         System.out.println("  периметр " + figure.perimeter());

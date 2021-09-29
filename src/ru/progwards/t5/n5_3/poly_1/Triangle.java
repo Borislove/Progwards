@@ -1,4 +1,4 @@
-package ru.progwards.t5.n5_3.Inheritance;
+package ru.progwards.t5.n5_3.poly_1;
 
 public class Triangle extends Segment {
     double b;

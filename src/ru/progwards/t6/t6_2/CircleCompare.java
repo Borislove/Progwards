@@ -1,6 +1,6 @@
 package ru.progwards.t6.t6_2;
 
-import ru.progwards.t5.n5_3.Inheritance.Circle;
+import ru.progwards.t5.n5_3.poly_1.Circle;
 
 public class CircleCompare {
 

@@ -1,4 +1,4 @@
-package ru.progwards.t5.n5_3.Inheritance;
+package ru.progwards.t5.n5_3.poly_1;
 
 //квадрат
 public class Square extends Segment{
