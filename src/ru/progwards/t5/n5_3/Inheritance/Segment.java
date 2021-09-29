@@ -16,4 +16,8 @@ public class Segment extends Figure {
     public String toString(){
         return "Отрезок, длина "+a;
     }
+
+    public static void main(String[] args) {
+        System.out.println(new Segment(10));
+    }
 }

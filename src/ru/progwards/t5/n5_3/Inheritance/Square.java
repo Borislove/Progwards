@@ -18,4 +18,7 @@ public class Square extends Segment{
         return "Квадрат "+a + " x "+a;
     }
 
+    public static void main(String[] args) {
+        System.out.println(new Square(10));
+    }
 }

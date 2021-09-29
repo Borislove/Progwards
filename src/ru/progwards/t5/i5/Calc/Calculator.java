@@ -12,12 +12,12 @@ class Calculator {       //Passed all tests!   public class - не проход�
 
     private int result;
 
-    Calculator() {
+   public Calculator() {
         this.result = 0;  //тоже работает, что и result = 0;
     }
 
     public void set(int num) {
-        result = num;
+       this.result = num;
     }
 
     public void add(int num) {
@@ -37,8 +37,11 @@ class Calculator {       //Passed all tests!   public class - не проход�
         Calculator b = new Calculator();
         Calculator result = new Calculator();
 
-        a.set(35);
-        b.set(45);
+        /*a.set(35);
+        b.set(45);*/
+
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.getResult());
     }
 }
 
