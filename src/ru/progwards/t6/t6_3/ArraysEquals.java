@@ -13,5 +13,8 @@ public class ArraysEquals {
 
         System.out.println(Arrays.equals(arrayInt1, arrayInt2)); //false
         System.out.println(Arrays.equals(arrayInt1, arrayInt3)); //true
+
+        Arrays.sort(arrayInt2);
+        System.out.println(Arrays.equals(arrayInt1, arrayInt2));
     }
 }

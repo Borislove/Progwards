@@ -1,5 +1,7 @@
 package ru.progwards.t6.t6_1;
 
+import java.util.Arrays;
+
 //Пример двумерного массива
 public class CheckFiboRule1 {
 
@@ -22,6 +24,7 @@ public class CheckFiboRule1 {
         System.out.println("intArray2D.length = " + intArray2D.length);
 
         for (int i = 0; i < intArray2D.length; i++) {
+            System.out.println(Arrays.toString(intArray2D[i]));
             System.out.println("checkFibo " + i + " = " + checkFibo(intArray2D[i]));
         }
     }

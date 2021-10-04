@@ -1,8 +1,11 @@
 package ru.progwards.t6.t6_1;
 
+import java.util.Arrays;
+
 //Передача массива параметром функции
 public class ArrayExamples1 {
     private static void printArray(int[] intArray) {
+        System.out.println(Arrays.toString(intArray));
         //код функции
     }
 

@@ -42,14 +42,17 @@ public class Rectangle {  //Passed all tests!
     }
 
     public int compareTo(Rectangle anRectangle) {
-        if (area() > (anRectangle.a * anRectangle.b)) {
+      /*  if (area() > (anRectangle.a * anRectangle.b)) {
             return 1;
         } else if ((area()) == (anRectangle.a * anRectangle.b)) {
             return 0;
         } else {
             return -1;
-        }
+        }*/
+
+    return Double.compare(area(), anRectangle.a * anRectangle.b);
     }
+
 
     public static void main(String[] args) {
         new Rectangle(20, 3).compareTo(new Rectangle(20, 20));

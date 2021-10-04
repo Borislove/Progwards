@@ -24,7 +24,49 @@ public class Arrays {
         return max;
     }
 
+
+    public static int arrayMax1(int[] a) {
+
+        int max = 0;
+
+        for (int value : a) {
+            if (value > max)
+                max = value;
+        }
+
+        return max;
+    }
+
+    public static int arrayMax2(int[] a) {
+
+        class Test {
+
+            int max;
+
+            public int arr(int[] a) {
+                for (int value : a) {
+                    if (value > max)
+                        max = value;
+                }
+                return max;
+            }
+        }
+        return new Test().arr(a);
+    }
+
+    public static int arrayMax3(int[] a) {
+        java.util.Arrays.sort(a);
+        return a.length != 0 ? a[a.length - 1] : 0;
+    }
+
+
     public static void main(String[] args) {
 
+        // arrayMax1(a);
+        //System.out.println(arrayMax1(a));
+
+        System.out.println(arrayMax2(a));
+
+        System.out.println(arrayMax3(a));
     }
 }
